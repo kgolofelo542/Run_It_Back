@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ran It Back - Enquiry</title>
+    <title>Enquiry - RunItBack Product & Partnership Inquiries</title>
+    <meta name="description" content="Submit enquiries about RunItBack products, volunteering opportunities, or sponsorship partnerships. Get detailed information about our streetwear collections.">
+    <meta name="keywords" content="product enquiry, volunteer RunItBack, sponsorship, streetwear partnership, fashion collaboration">
+    <meta name="author" content="RunItBack">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
 </head>
 <body>
 
-<header >
+<header>
     <div class="logo">
-    <h1 class="logo-text" >RunItBack</h1>
+        <h1 class="logo-text">RunItBack</h1>
     </div>
 
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
 
     <nav class="navbar">
         <ul class="nav-list">
-            <li class="nav-item"><a href="../index.html" class="nav-link" >Home</a>  </li> 
+            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li> 
             <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
             <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
             <li class="nav-item"><a href="enquiry.html" class="nav-link" id="active-nav-link">Enquiry</a></li>
-            <li class="nav-item"><a href="contacts.html" class="nav-link" >Contact</a></li>
+            <li class="nav-item"><a href="contacts.html" class="nav-link">Contact</a></li>
         </ul>    
     </nav>    
-    
 </header>
-
 
   <!-- HERO -->
   <section class="hero">
@@ -41,41 +43,40 @@
     </div>
   </section>
 
-<section class="content-section" style="padding:20px; ">
-    <form action="#" method="post">
-        <table>
-            <tr>
-                <td><label>Full Name:</label></td>
-                <td><input type="text" name="name" required></td>
-            </tr>
-            <tr>
-                <td><label>Email:</label></td>
-                <td><input type="email" name="email" required></td>
-            </tr>
-            <tr>
-                <td><label>Enquiry Type:</label></td>
-                <td>
-                <select name="type">
-                    <option value="product">Product Enquiry</option>
-                    <option value="volunteer">Volunteer</option>
-                    <option value="sponsor">Sponsor</option>
-                </select>
-                </td>
-            </tr>
-            <tr>
-                <td><label>Message:</label></td>
-                <td><textarea name="message" required></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><button type="submit">Send</button></td>
-            </tr>
-        </table>
+<section class="content-section">
+    <form id="enquiryForm" action="#" method="post">
+        <div class="form-group">
+            <label for="enquiryName">Full Name:</label>
+            <input type="text" id="enquiryName" name="name" required placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+            <label for="enquiryEmail">Email:</label>
+            <input type="email" id="enquiryEmail" name="email" required placeholder="your.email@example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="enquiryType">Enquiry Type:</label>
+            <select id="enquiryType" name="type" required>
+                <option value="">Select enquiry type</option>
+                <option value="product">Product Enquiry</option>
+                <option value="volunteer">Volunteer</option>
+                <option value="sponsor">Sponsor</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="enquiryMessage">Message:</label>
+            <textarea id="enquiryMessage" name="message" required placeholder="Please provide detailed information about your enquiry..." rows="6"></textarea>
+        </div>
+
+        <button type="submit">Submit Enquiry</button>
     </form>
 </section>
+
 <footer>
-        <p>&copy; 2025 Run It Back.All Rights Reserved</p>
-    </footer>
+    <p>&copy; 2025 RunItBack. All Rights Reserved</p>
+</footer>
+
 </body>
 </html>

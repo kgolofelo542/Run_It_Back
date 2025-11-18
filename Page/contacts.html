@@ -3,34 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ran It Back - Contact</title>
+    <title>Contact RunItBack - Get in Touch with Premium Streetwear Brand</title>
+    <meta name="description" content="Contact RunItBack for inquiries, support, or collaborations. Reach out to our premium streetwear brand through our contact form or visit our locations.">
+    <meta name="keywords" content="contact RunItBack, streetwear support, fashion brand contact, clothing inquiries">
+    <meta name="author" content="RunItBack">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
 </head>
 <body>
 
-<header >
+<header>
     <div class="logo">
-    <h1 class="logo-text" >RunItBack</h1>
+        <h1 class="logo-text">RunItBack</h1>
     </div>
 
-     <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
 
     <nav class="navbar">
         <ul class="nav-list">
-            
-            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a> </li>  
-            <li class="nav-item"><a href="about.html" class="nav-link" >About Us</a></li>
-            <li class="nav-item"><a href="Products.html" class="nav-link" >Products</a></li>
-            <li class="nav-item"><a href="enquiry.html" class="nav-link" >Enquiry</a></li>
-            <li class="nav-item"><a href="contacts.html" class="nav-link" >Contact</a></li>
-
+            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>  
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+            <li class="nav-item"><a href="enquiry.html" class="nav-link">Enquiry</a></li>
+            <li class="nav-item"><a href="contacts.html" class="nav-link" id="active-nav-link">Contact</a></li>
         </ul>     
-
     </nav>
 </header>
 
@@ -41,41 +42,76 @@
       <p>Contact us below.</p>
     </div>
   </section>
-<section class="content-section" style="padding:20px;">
-      <h2>Send Us a Message</h2>
-    <form action="#" method="post">
-        <label>Full Name:</label><br>
-        <input type="text" name="name" required><br><br>
 
-        <label>Email:</label><br>
-        <input type="email" name="email" required><br><br>
+<section class="content-section">
+    <h2>Send Us a Message</h2>
+    <form id="contactForm" action="#" method="post">
+        <div class="form-group">
+            <label for="contactName">Full Name:</label>
+            <input type="text" id="contactName" name="name" required placeholder="Enter your full name">
+        </div>
 
-        <label>Message:</label><br>
-        <textarea name="message" required></textarea><br><br>
+        <div class="form-group">
+            <label for="contactEmail">Email:</label>
+            <input type="email" id="contactEmail" name="email" required placeholder="your.email@example.com">
+        </div>
 
-        <button type="submit">Send</button>
+        <div class="form-group">
+            <label for="contactMessage">Message:</label>
+            <textarea id="contactMessage" name="message" required placeholder="Tell us how we can help you..." rows="5"></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
     </form>
 </section>
 
-<section style="padding:20px;" class="content-section" style="padding: 10px;">
-    <h2>Locations</h2>
-    <p><strong>Head Office:</strong> 123 Main Street, Johannesburg, South Africa</p>
-    <p><strong>Branch Office:</strong> 45 Park Avenue, Cape Town, South Africa</p>
+<section class="content-section">
+    <h2>Our Locations</h2>
+    <div class="location-info">
+        <p><strong>Head Office:</strong> 123 Main Street, Johannesburg, South Africa</p>
+        <p><strong>Branch Office:</strong> 45 Park Avenue, Cape Town, South Africa</p>
+    </div>
 
-     <!-- our map -->
-     <section class="map">
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31672.1234567890!2d28.0473!3d-26.2023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9571f0b8c12345%3A0xabcdef1234567890!2s123%20Main%20St%2C%20Johannesburg%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v0000000000000!5m2!1sen!2sza">
- 
-         width="400" 
-         height="250" 
-         style="border:0;" 
-         allowfullscreen="" 
-         loading="lazy" 
-         referrerpolicy="no-referrer-when-downgrade">
-       </iframe>    
+    <div class="map-container">
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.921316026987!2d28.047305315031!3d-26.204483483441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9571f0b8c12345%3A0xabcdef1234567890!2s123%20Main%20St%2C%20Johannesburg%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza"
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="RunItBack Johannesburg Location">
+            </iframe>    
+        </div>
+    </div>
 </section>
+
+<!-- FAQ Section -->
+<section class="content-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="accordion">
+        <div class="accordion-header">What are your shipping times?</div>
+        <div class="accordion-content">
+            <p>We typically process and ship orders within 1-2 business days. Domestic shipping takes 3-5 business days.</p>
+        </div>
+        
+        <div class="accordion-header">Do you offer international shipping?</div>
+        <div class="accordion-content">
+            <p>Yes! We ship worldwide. Shipping costs and delivery times vary by location.</p>
+        </div>
+        
+        <div class="accordion-header">What is your return policy?</div>
+        <div class="accordion-content">
+            <p>We offer 30-day returns on all unworn items with original tags attached.</p>
+        </div>
+    </div>
+</section>
+
 <footer>
-        <p>&copy; 2025 Run It Back.All Rights Reserved</p>
-    </footer>
+    <p>&copy; 2025 RunItBack. All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
